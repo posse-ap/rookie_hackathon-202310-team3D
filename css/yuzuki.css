@@ -1,3 +1,7 @@
+div {
+    letter-spacing: 0.2rem;
+    line-height: 1.8;
+}
 .scroll-up {
     transform: translate(0,100px);
     opacity: 0;
@@ -8,37 +12,44 @@
     opacity: 1.0;
 }
 
+
 .yuz-TOP {
     margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .yuz-posse {
     font-size: 70px;
     padding-left: 10%;
     padding-top: 5%;
+    font-weight: bold;
 }
 .yuz-top {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .yuz-hero {
-    width: 600px;
+    /* width: 90%; */
     height: auto;
-    margin-top: 3%;
-    margin-right: 3%;
+    margin-top: 5%;
+    margin-right: 5%;
     border-radius: 30px;
     overflow: hidden;
 }
 .yuz-setu {
-    display: flex;
+    display: grid;
+    grid-template-columns: 60% 40%;
     padding: 50px;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
 }
 .yuz-title {
     font-size: 20px;
 }
 .yuz-ningen {
     font-size: 35px;
+    font-weight: bolder;
 }
 .yuz-ULhero {
     display: flex;
@@ -48,9 +59,12 @@
 
 .yuz-about {
     margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 .yuz-Pimg{
-    width: 500px;
+    /* width: 500px; */
     height: auto;
     margin-top: 3%;
     margin-right: 3%;
@@ -60,12 +74,21 @@
 .yuz-P {
     margin: 50px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 55% 45%;
+    gap: 50px;
+    align-items: center;
+}
+.yuz-Pdesc {
+    padding-top: 20px;
 }
 .yuz-Ptext {
-    font-size: 20px;
+    font-size: 16px;
+    text-align: center;
 }
 .yuz-ABOUTtitle {
     font-size: 48px;
     text-align: center;
+}
+.yuz-Panother {
+    padding-top:  30px;
 }
