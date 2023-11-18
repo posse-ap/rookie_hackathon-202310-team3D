@@ -1,0 +1,71 @@
+.scroll-up {
+    transform: translate(0,100px);
+    opacity: 0;
+    transition: 1s;
+}
+.scroll-up.on {
+    transform: translate(0,0);
+    opacity: 1.0;
+}
+
+.yuz-TOP {
+    margin-top: 80px;
+}
+.yuz-posse {
+    font-size: 70px;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+.yuz-top {
+    width: 100%;
+    display: flex;
+}
+.yuz-hero {
+    width: 600px;
+    height: auto;
+    margin-top: 3%;
+    margin-right: 3%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.yuz-setu {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    gap: 10px;
+}
+.yuz-title {
+    font-size: 20px;
+}
+.yuz-ningen {
+    font-size: 35px;
+}
+.yuz-ULhero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.yuz-about {
+    margin-top: 80px;
+}
+.yuz-Pimg{
+    width: 500px;
+    height: auto;
+    margin-top: 3%;
+    margin-right: 3%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.yuz-P {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.yuz-Ptext {
+    font-size: 20px;
+}
+.yuz-ABOUTtitle {
+    font-size: 48px;
+    text-align: center;
+}
