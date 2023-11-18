@@ -1,0 +1,333 @@
+.ouka-daily {
+    position: relative;
+}
+.ouka-dailyTitle {
+    font-size: 48px;
+    text-align: center
+}
+
+.ouka-dailyContent {
+    margin-top: 60px;
+    /* position: relative; */
+}
+
+.ouka-imgList {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ouka-imgItem {
+    box-sizing: unset;
+    width: 25%;
+    height: 300px;
+    padding: 8px 8px 50px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1),
+        5px 5px 20px 13px rgba(10, 10, 10, 0.02);
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.ouka-imgItem figure {
+    width: 100%;
+    height: 100%;
+}
+
+.ouka-imgItem figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+
+.ouka-imgItem:nth-child(even) {
+    transform: rotate(-5deg);
+}
+
+.ouka-imgItem:nth-child(odd) {
+    transform: rotate(5deg);
+}
+
+/* もっと見る(〇) */
+.ouka-dailyMore {
+    position: absolute;
+    right: 70px;
+    bottom: -70px;
+}
+
+.more-btn {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    position: relative;
+    /* margin: 200px; */
+}
+
+.more-text {
+    margin-bottom: 12px;
+    color: skyblue;
+}
+
+.more-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .4s;
+}
+
+.more-arrow {
+    position: absolute;
+    top: 75%;
+    right: 50%;
+    transform: translate(0, 50%);
+    transition: all .4s;
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-bottom: 2px solid skyblue;
+}
+
+.more-arrow::before {
+    content: "";
+    position: absolute;
+    bottom: -2.5px;
+    right: 15%;
+    display: block;
+    width: 2px;
+    height: 13px;
+    background-color: skyblue;
+    transform: rotate(310deg);
+}
+
+.more-btn:hover .more-circle {
+    width: 140px;
+    height: 140px;
+}
+
+.more-btn:hover .more-arrow {
+    right: -40px;
+}
+
+/* アルバムCSS */
+/* アルバムヘッダー */
+.album-header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom: solid 1px #EEEEEE;
+    font-size: 16px;
+    /* padding: 0 24px; */
+    /* z-index: 10000; */
+}
+
+.album-headerNav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 48px;
+}
+
+.album-headerNavList {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    border-radius: 25px;
+}
+
+/* アルバムメイン */
+.ouka-album {
+    font-size: 48px;
+}
+.ouka-albAir {
+    padding-left: 20px;
+    font-size: 18px;
+}
+.ouka-albumLogo {
+    font-size: 20px;
+}
+
+.ouka-disney {
+    margin: 120px 50px;
+}
+
+.ouka-hack {
+    margin: 120px 50px;
+}
+
+.ouka-dx {
+    margin: 120px 50px;
+}
+
+.ouka-posse3 {
+    margin: 120px 50px;
+}
+
+
+.ouka-contentWrapper {
+    margin: 0 100px;
+    display: grid;
+}
+
+.ouka-albumTitle {
+    font-size: 30px;
+    margin: 20px 0 30px 50px;
+    /* padding-left: -20px; */
+}
+
+.ouka-albumItem1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.ouka-albumItem3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.ouka-albumItem4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.ouka-img1 {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.ouka-img2 {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.ouka-img3 {
+    width: 400px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.ouka-img4 {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.ouka-img5 {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.ouka-img6 {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.ouka-REtitle {
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+/* Return-btn */
+.ouka-albumReturn {
+    margin: 0 auto 0 70%;
+}
+
+.return-btn {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.return-text {
+    margin-bottom: 12px;
+    color: skyblue;
+}
+
+.return-circle {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .4s;
+}
+
+.return-arrow {
+    position: absolute;
+    top: 75%;
+    right: 50%;
+    transform: translate(0, 50%);
+    transition: all .4s;
+    display: block;
+    width: 28px;
+    height: 15px;
+    border-bottom: 2px solid skyblue;
+}
+
+.return-arrow::before {
+    content: "";
+    position: absolute;
+    bottom: -2.5px;
+    right: 15%;
+    display: block;
+    width: 2px;
+    height: 14px;
+    background-color: skyblue;
+    transform: rotate(310deg);
+}
+
+.return-btn:hover .return-circle {
+    width: 140px;
+    height: 140px;
+}
+
+.return-btn:hover .return-arrow {
+    right: -40px;
+}
+
+
+/* アルバムフッター */
+.ouka-footer {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.ouka-footerCopyright {
+    text-align: center;
+    margin-top: 24px;
+    border-top: solid 1px #F7F9FB;
+    color: #ADADAD;
+    font-size: 10px;
+    padding: 24px;
+}
