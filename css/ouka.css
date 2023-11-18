@@ -10,6 +10,10 @@
     margin-top: 60px;
     /* position: relative; */
 }
+.ouka-albumLogo {
+    font-weight: bolder;
+    font-size: 20px;
+}
 
 .ouka-imgList {
     width: 90%;
@@ -26,7 +30,6 @@
     background-color: #fff;
     box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1),
         5px 5px 20px 13px rgba(10, 10, 10, 0.02);
-    transition: all .4s;
     cursor: pointer;
 }
 
@@ -73,13 +76,14 @@
 .more-text {
     margin-bottom: 12px;
     color: skyblue;
+    font-size: 24px;
 }
 
 .more-circle {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
-    border: 2px solid skyblue;
+    border: 2.5px solid skyblue;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -94,9 +98,9 @@
     transform: translate(0, 50%);
     transition: all .4s;
     display: block;
-    width: 25px;
-    height: 10px;
-    border-bottom: 2px solid skyblue;
+    width: 30px;
+    height: 13px;
+    border-bottom: 2.5px solid skyblue;
 }
 
 .more-arrow::before {
@@ -105,7 +109,7 @@
     bottom: -2.5px;
     right: 15%;
     display: block;
-    width: 2px;
+    width: 2.5px;
     height: 13px;
     background-color: skyblue;
     transform: rotate(310deg);
@@ -159,7 +163,7 @@
 }
 .ouka-albAir {
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .ouka-albumLogo {
     font-size: 20px;
@@ -254,8 +258,8 @@
 }
 
 .return-btn {
-    width: 120px;
-    height: 120px;
+    width: 170px;
+    height: 170px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,10 +276,10 @@
 }
 
 .return-circle {
-    width: 175px;
-    height: 175px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
-    border: 2px solid skyblue;
+    border: 2.5px solid skyblue;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -290,9 +294,9 @@
     transform: translate(0, 50%);
     transition: all .4s;
     display: block;
-    width: 28px;
-    height: 15px;
-    border-bottom: 2px solid skyblue;
+    width: 30px;
+    height: 17px;
+    border-bottom: 2.5px solid skyblue;
 }
 
 .return-arrow::before {
@@ -301,15 +305,15 @@
     bottom: -2.5px;
     right: 15%;
     display: block;
-    width: 2px;
-    height: 14px;
+    width: 2.5px;
+    height: 15px;
     background-color: skyblue;
     transform: rotate(310deg);
 }
 
 .return-btn:hover .return-circle {
-    width: 140px;
-    height: 140px;
+    width: 155px;
+    height: 155px;
 }
 
 .return-btn:hover .return-arrow {

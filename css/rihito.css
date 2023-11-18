@@ -8,8 +8,10 @@
     width: 100%;
     background-color: #FFFFFF;
     border-bottom: solid 1px #EEEEEE;
-    padding: 0 24px;
+    padding: 0 35px;
     z-index: 10000;
+    box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.07),
+        5px 5px 20px 10px rgba(10, 10, 10, 0.01);
   }
   
   .header-logo {
@@ -28,26 +30,24 @@
     gap: 32px;
     list-style: none;
     border-radius: 25px;
+    align-items: center;
   }
   
 
 
   .header-navLink{
-   color: var(--primary-color);
    font-weight: bold;
-   line-height: 1.8;
-   letter-spacing: .1em;
-   transition: color .3s linear;
    font-size: 14px;
-   display: inline-block;
+   display: block;
    margin: auto;
    cursor: pointer;
+   align-items: center;
   }
 
   .header-navLink::after{
     display: block;
     content: '';
-    border-bottom: solid 2px #027333;
+    border-bottom: solid 2px rgb(32, 145, 189);
     padding-bottom: 15%;
     transform: scaleX(0);
     transition: transform 180ms ease-in-out;
@@ -64,9 +64,12 @@
   html{
     scroll-behavior: smooth;
   }
-  body{
-    color: 333333;
+
+  .rih-CULtitle {
+    font-size: 33px;
+    text-align: center;
   }
+
 
   
   h2 {
@@ -84,10 +87,13 @@
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    height: 260px;
-    border: 1px solid #e0e0e0;
+    height: 330px;
+    border: 1px solid lightgray;
     border-radius: 10px;
     text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1),
+        5px 5px 20px 13px rgba(10, 10, 10, 0.02);
 }
 
  
@@ -108,11 +114,10 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
-  
-  
+
   .wrapper{
     padding: 80px 0 ;
-    display: flex;
+    margin-top: 100px;
     flex-direction: column;
     gap: 120px;
   }
@@ -139,16 +144,6 @@
     letter-spacing: .05em;
     display: block;
     font-weight: bold;
-  }
-  .title-en{
-    font-weight: bold;
-    display: block;
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: .1em;
-    margin-top: 8px;
-    color: var(--primary-color);
-    font-family: var(--english-font);
   }
   
   .about-column{
@@ -196,7 +191,7 @@
   }
 
 strong{
-    background: linear-gradient(180deg, #fcfcfa 0%, #fcfcfa 70%, #e2c3c2 70%, #e2c3c2 100%);
+    background: linear-gradient(180deg, rgb(248,248,248) 0%, rgb(248,248,248) 70%, lightblue 70%, lightblue 100%);
 }
 
 
@@ -226,14 +221,6 @@ strong{
   .footer-snsList{
     display: flex;
     gap: 24px;
-  }
-  .footer-copyright{
-    text-align: center;
-    margin-top: 24px;
-    border-top: solid 1px #F7F9FB;
-    color: #ADADAD;
-    font-size: 10px;
-    padding: 24px;
   }
 
   .footer-snsItem:hover{

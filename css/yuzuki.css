@@ -12,11 +12,16 @@ div {
     opacity: 1.0;
 }
 
+.yuz-AIR {
+    margin-top: 100px;
+}
+
 /* title */
 .yuz-title {
     font-size: 48px;
     text-align: center;
     padding-top: 20px;
+    font-weight: 500;
 }
 .yuz-text {
     font-size: 16px;
@@ -27,14 +32,13 @@ div {
     font-weight: 600;
 }
 .yuz-TOP {
-    margin-top: 80px;
     margin-left: 20px;
     margin-right: 20px;
 }
 .yuz-posse {
-    font-size: 70px;
-    padding-left: 10%;
-    padding-top: 5%;
+    font-size: 75px;
+    padding-left: 7%;
+    padding-top: 7%;
     font-weight: bold;
 }
 .yuz-top {
@@ -57,6 +61,22 @@ div {
     align-items: center;
     gap: 50px;
 }
+.yuz-Plus {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.yuz-plus {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: rgb(44, 44, 44);
+}
+.yuz-plus:nth-of-type(2) {
+    transform: translate(-27.5px,0) rotate(90deg);
+}
 
 .yuz-ningen {
     font-size: 35px;
@@ -66,6 +86,7 @@ div {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    position: relative;
 }
 .jump {
     padding-top: 100px;
@@ -117,7 +138,7 @@ div {
     gap: 5%;
 }
 .yuz-ACTnav {
-    background-color: whitesmoke;
+    background-color: #fff;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 18px;
@@ -125,6 +146,14 @@ div {
     font-weight: 700;
     width: 33%;
     border-radius: 5px 5px 0 0;
+}
+.yuz-ACTnav:hover {
+    background-color: lightblue;
+}
+.yuz-ACTany {
+    box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1),
+        5px 5px 20px 13px rgba(10, 10, 10, 0.02);
+        border-radius: 10px;
 }
 .yuz-ACTtext {
     font-size: 16px;
@@ -147,7 +176,7 @@ div {
 }
 .yuz-ACTli2 {
     padding: 35px 25px 50px 25px ;
-    background-color: whitesmoke;
+    background-color: #fff;
 }
 .yuz-ACTout {
     padding-bottom: 20px;
