@@ -1,0 +1,229 @@
+.header{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom: solid 1px #EEEEEE;
+    padding: 0 35px;
+    z-index: 10000;
+    box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.07),
+        5px 5px 20px 10px rgba(10, 10, 10, 0.01);
+  }
+  
+  .header-logo {
+  width: 148px;
+  }
+  
+  .header-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 48px;
+  }
+  
+  .header-navList{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    border-radius: 25px;
+    align-items: center;
+  }
+  
+
+
+  .header-navLink{
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  align-items: center;
+  }
+
+  .header-navLink::after{
+    display: block;
+    content: '';
+    border-bottom: solid 2px rgb(32, 145, 189);
+    padding-bottom: 15%;
+    transform: scaleX(0);
+    transition: transform 180ms ease-in-out;
+  }
+  
+  .header-navLink:hover::after{
+    transform: scaleX(1);
+  }
+
+
+
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .rih-CULtitle {
+    font-size: 33px;
+    text-align: center;
+  }
+
+
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .splide{
+    margin: 0 auto;
+}
+
+  .splide__slide {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 330px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1),
+        5px 5px 20px 13px rgba(10, 10, 10, 0.02);
+}
+.splide-image{
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.splide__slide:hover{
+    transform: scale(1.1);
+}
+
+.splide-image-2{
+    padding-bottom: 40px;
+    border-radius: 10px;
+}
+.splide__track.rih-sp {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+  .wrapper{
+    padding: 80px 0 ;
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 120px;
+  }
+  .container{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: content-box;
+  }
+  .section{
+    padding-top: 80px;
+    margin-top: -80px;
+  }
+  
+  .section-body{
+    margin-top: 40px;
+  }
+  .title{
+    text-align: center;
+  }
+  .title-ja{
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .about-column{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    align-items: center;
+  }
+
+  .about-column-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    align-items: center;
+    order: 1;
+  }
+  .about-image{
+    border-radius: 50% 0 50% 0 ;
+    overflow: hidden;
+    width: 300px;
+    margin-left: 80px;
+    }
+
+  .about-image-2{
+    border-radius: 0 50% 0 50%;
+    overflow: hidden;
+    width: 300px;
+    order: 2;
+    margin-left: 100px;
+}
+  .about-text{
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .about-text-inner{
+    font-size: 28px;
+  }
+
+strong{
+    background: linear-gradient(180deg, rgb(248,248,248) 0%, rgb(248,248,248) 70%, lightblue 70%, lightblue 100%);
+}
+
+
+  .footer{
+    padding-top: 40px;
+    text-align: center;
+  }
+  
+  .footer-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .footer-logo{
+    width: 200px;
+  }
+  .footer-corporateLink{
+    color: #666666;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .footer-snsList{
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-snsItem:hover{
+    animation: shake  .5s;
+  }
+
+  @keyframes shake{
+    0%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    40%{transform: rotate(15deg);}
+    60%{transform: rotate(-15deg);}
+    80%{transform: rotate(15deg);}
+  }

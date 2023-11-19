@@ -8,33 +8,292 @@
     <link rel="stylesheet" href="./css/rihito.css">
     <link rel="stylesheet" href="./css/ouka.css">
     <link rel="stylesheet" href="./css/yuzuki.css">
-    <script src="./js/ouka.js" defer></script>
+    <link rel="stylesheet" href="./css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500&display=swap" rel="stylesheet">
     <script src="./js/rihito.js" defer></script>
     <script src="./js/yuzuki.js" defer></script>
+    <script src="./js/splide.min.js" defer></script>
 </head>
 <body>
-    <header>
-        <!-- りひとヘッダー -->
-    </header>
+    <!-- りひとヘッダー -->
+    <header class="header">
+        <a href="https://posse-ap.com/" class="header-logo" target="_blank" rel="noopener noreferrer">
+            <img src="./img/logo.svg" alt="POSSE">
+        </a>
+        <nav class="header-nav">
+            <ul class="header-navList">
+                <li class="header-navItem">
+                    <a href="#top" class="header-navLink">#POSSE③</a>
+                </li>
+                <li class="header-navItem">
+                    <a href="#posse" class="header-navLink">POSSEとは</a>
+                </li>
+                <li class="header-navItem">
+                    <a href="#action" class="header-navLink">活動内容</a>
+                </li>
+                <li class="header-navItem">
+                    <a href="#daily" class="header-navLink">日常生活</a>
+                </li>
+                <li class="header-navItem">
+                    <a href="#place" class="header-navLink">活動場所</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
     <main>
-        <div>
+        <section>
             <!-- ゆづきヒーロー -->
-        </div>
-        <div>
+            <div class="yuz-TOP">
+                <div class="yuz-top">
+                    <div class="yuz-desc">
+                        <div class="yuz-posse jump" id="top">POSSE③</div>
+                        <div class="yuz-setu">
+                            <ul class="yuz-ULhero">
+                                <li class="yuz-Ptext">・活動量の多さ＆仲のいい人と本気で取り組むことによって生まれる信頼関係</li>
+                                <li class="yuz-Ptext">・自分たちで企画するイベントによって生まれる仲の良さ</li>
+                                <li class="yuz-Plus">
+                                    <span class="yuz-plus"></span>
+                                    <span class="yuz-plus"></span>
+                                </li>
+                            </ul>
+                            <div class="yuz-ningen">気の置けない <br>仲間を</div>
+                        </div>
+                    </div>
+                    <div class="yuz-hero">
+                        <img src="./img/yuz-hro.jpg" alt="posse3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
             <!-- ゆづきposseについて -->
-        </div>
-        <div>
-            <!-- おうか遊びアルバム -->
-        </div>
-        <div>
+            <div class="yuz-about scroll-up">
+                <div class="yuz-title jump" id="posse">POSSEとは</div>
+                <div class="yuz-P">
+                    <div class="yuz-Pimg">
+                        <img src="./img/yuz-new.jpg" alt="posse">
+                    </div>
+                    <div class="yuz-Pdesc">
+                        <p class="yuz-text">経済産業省によると、IT人材は2030年には最大79万人不足するといわれています</p>
+                        <p class="yuz-text">そのためIT人材の需要は年々拡大傾向にあります</p>
+                        <br>
+                        <p class="yuz-text">また、プログラミングは大きく見た目を扱う「フロントエンド」と「バックエンド」に分かれています</p>
+                            <p class="yuz-text">POSSEでは <span class="yuz-span">主にWeb開発についてのフロント・バックエンドの両方</span>を学ぶことができます</p>
+                    </div>
+                </div> 
+                <div class="yuz-Ptext yuz-Panother">
+                    <p>それ以外にも自分たちから遊びイベントやチーム短期合宿の運営を積極的に取り組むこと、</p>
+                    <p>チーム対抗短期開発合宿での優勝という同じ目標に向かって気の置けない仲間とともに取り組む事で、
+                        <br>成長、ひいては <span class="yuz-span">ガクチカ</span>につながります</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- 活動内容 -->
+            <div class="yuz-ACT scroll-up">
+                <div class="yuz-title jump" id="action">活動内容</div>
+                <div class="yuz-ACTgrid">
+                    <div class="yuz-ACTtab">
+                        <div class="yuz-tab">
+                            <button class="yuz-ACTnav" id="yuz-tabMU">ミートアップ</button>
+                            <button class="yuz-ACTnav" id="yuz-tabROW">横もく</button>
+                            <button class="yuz-ACTnav" id="yuz-tabCOL">縦もく</button>
+                        </div>
+                        <ul class="yuz-ACTany">
+                            <li class="yuz-ACTul" id="yuz-ACTmu">
+                                <div class="yuz-ACTli1">
+                                    <img src="./img/yuz-mu.jpg" alt="mu">
+                                </div>
+                                <div class="yuz-ACTli2">
+                                    <ul class="yuz-ACTout">
+                                        <li class="yuz-ACTtext">毎週月曜日 19:30～22:30</li>
+                                        <li class="yuz-ACTtext">全員参加</li>
+                                    </ul>
+                                    <div class="yuz-textACT">
+                                        <p>全体ミーティングです<br>お知らせや、ワークショップなどをします</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="yuz-ACTul yuz-ACTnone" id="yuz-ACTrow">
+                                <div class="yuz-ACTli1">
+                                    <img src="./img/yuz-row.jpg" alt="横もく">
+                                </div>
+                                <div class="yuz-ACTli2">
+                                    <ul class="yuz-ACTout">
+                                        <li class="yuz-ACTtext">週1回 3時間</li>
+                                    </ul>
+                                    <div class="yuz-textACT">
+                                        <p>同期と3～4人一組で学習しながら、わからないところを共有、質問します<br>オフライン・オンラインで集合したり、共に短期開発合宿に挑みます</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="yuz-ACTul yuz-ACTnone" id="yuz-ACTcol">
+                                <div class="yuz-ACTli1">
+                                    <img src="./img/yuz-col.png" alt="縦もく">
+                                </div>
+                                <div class="yuz-ACTli2">
+                                    <ul class="yuz-ACTout">
+                                        <li class="yuz-ACTtext">週1回 2時間</li>
+                                    </ul>
+                                    <div class="yuz-textACT">
+                                        <p>期生関係なくzoomを繋ぎ、わからないところを先輩に質問できます<br>わかるまで丁寧に教えてくれます</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="yuz-ACTsup">
+                        <div class="yuz-supTitle">各種サポート</div>
+                        <ul>
+                            <li class="yuz-supLi">
+                                <p class="yuz-supP">かだサポ</p>
+                                <P class="yuz-supp">カリキュラム遅れ、分からないところを同期や先輩とすすめることができます</P>
+                            </li>
+                            <li class="yuz-supLi">
+                                <p class="yuz-supP">○○講座</p>
+                                <P class="yuz-supp">プログラミング必須スキルを習得することができます</P>
+                            </li>
+                            <li class="yuz-supLi">
+                                <p class="yuz-supP">TIPs</p>
+                                <P class="yuz-supp">LINEやDiscordで難所共有やアドバイスをもらうことができます</P>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <!-- りひと活動のながれ -->
-        </div>
-        <div>
-            <!-- りひと活動場所 -->
-        </div>
+            <div class="yuz-AIR scroll-up">
+                <p class="rih-CULtitle">カリキュラム</p>
+                <div class="splide">
+                    <div class="splide__track rih-sp">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <figure class="splide-image">
+                                    <img src="./img/S__60317720_0.jpg" alt="new">
+                                </figure>6月<br>POSSE入学!</li>
+                            <li class="splide__slide">
+                                <figure class="splide-image">
+                                    <img src="./img/S__60317722_0.jpg" alt="newhackathon">
+                                </figure>7月<br>チーム短期開発合宿 <br>(新人ハッカソン)</li>
+                            <li class="splide__slide">
+                                <figure class="splide-image">
+                                    <img src="./img/S__60317723_0.jpg" alt="hackathon">
+                                </figure>9月<br>チーム短期開発合宿<br>(ハッカソン)</li>
+                            <li class="splide__slide">
+                                <figure class="splide-image">
+                                    <img src="./img/S__60317724_0.jpg" alt="newhackathon">
+                                </figure>11月<br>チーム短期開発合宿<br>(新人ハッカソン)</li>
+                            <li class="splide__slide">
+                                <figure class="splide-image-2">
+                                    <img src="./img/S__60317725_0.jpg" alt="development">
+                                </figure>2~4月<br>チーム開発</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="yuz-AIR scroll-up">
+            <!-- おうか遊びアルバム -->
+            <div class="ouka-daily">
+                <div class="yuz-title jump" id="daily">
+                    日常生活
+                </div>
+                <div class="ouka-dailyContent">
+                    <ul class="ouka-imgList">
+                        <li class="ouka-imgItem">
+                            <figure>
+                                <img src="./img/ouka-disney1.jpg" alt="">
+                            </figure>
+                        </li>
+                        <li class="ouka-imgItem">
+                            <figure>
+                                <img src="./img/ouka-hack3.jpg" alt="">
+                            </figure>
+                        </li>
+                        <li class="ouka-imgItem">
+                            <figure>
+                                <img src="./img/ouka-dx4.jpg" alt="">
+                            </figure>
+                        </li>
+                        <li class="ouka-imgItem">
+                            <figure>
+                                <img src="./img/ouka-yoko3.jpg" alt="">
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ouka-dailyMore">
+                    <a href="album.html" class="more-btn">
+                        <span class="more-text">MORE<br>Information</span>
+                        <span class="more-circle"></span>
+                        <div class="more-arrow"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- りひと活動場所 -->
+        <section class="wrapper scroll-up">
+            <div id="place" class="place about jump">
+                <div class="section">
+                    <h2 class="title">
+                        <span class="yuz-title">活動場所</span>
+                    </h2>
+                </div>
+                <div class="section-body">
+                    <div class="container">
+                        <div class="about-column">
+                            <figure class="about-image">
+                                <img src="./img/votop-fv.jpg" alt="">
+                            </figure>
+                            <div class="about-text">
+                                <h2 class="about-text-inner"><strong>Harbors</strong></h2>
+                                <p>
+                                    POSSEでは、表参道にあるHarborsというワークスペースが無料で使えます! 
+                                    <br>泉キャンパスからも近く、ミートアップのときなどは放課後にあつまって参加している人も多くいます! </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-body">
+                    <div class="container">
+                        <div class="about-column">
+                            <figure class="about-image-2">
+                                <img src="./img/2022_RCM233_87_pic03 (1).png" alt="">                   
+                            </figure>
+                            <div class="about-text">
+                                <h2 class="about-text-inner"><strong>和泉ラーニングスクエア</strong></h2>
+                                <p>和泉キャンパスにある建物です。内装がおしゃれでくつろげる場所もあります。おしゃべりもできたり、集中して課題を進めることもできます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <!-- りひとフッター -->
+    <!-- りひとフッター -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <a href="https://posse-ap.com/" class="footer-logo" target="_blank" rel="noopener noreferrer">
+                <img src=".//img/logo.svg" alt="POSSE" width="202" height="39">
+            </a>
+            <ul class="footer-snsList">
+                <li class="footer-snsItem">
+                    <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="footer-snsLink" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/icon-line.svg" alt="line" width="40" height="40">
+                    </a>
+                </li>
+                <li class="footer-snsItem">
+                    <a href="https://www.instagram.com/posse_programming/" class="footer-snsLink" target="_blank" rel="noopener noreferrer">
+                        <img src=".//img/icon-instagram.png" alt="instagram" width="45" height="45">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
